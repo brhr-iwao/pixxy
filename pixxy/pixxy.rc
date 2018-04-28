@@ -1,0 +1,106 @@
+#include "pixxy.h"
+#include <afxres.h>
+
+// Manus
+// Main menu
+PIXXYMAINMENU MENU DISCARDABLE
+BEGIN
+ POPUP "File(&F)"
+ BEGIN
+   MENUITEM "Open image(&O)...\tCtrl + O"  IDM_OPEN
+   MENUITEM "Close image(&C)\tCtrl + W"   IDM_CLOSE
+   MENUITEM   SEPARATOR
+   MENUITEM "Exit(&X)\tCtrl + Q"  IDM_END
+ END
+ POPUP "View(&V)"
+ BEGIN
+    MENUITEM "Refresh image(&R)\tCtrl + R"  IDM_RELOAD
+	MENUITEM SEPARATOR
+	MENUITEM "Enlarge(&E)\tCtrl + +"  IDM_ENLARGE
+	MENUITEM "Shrink(&S)\tCtrk + -"  IDM_SHRINK
+  END
+ POPUP "Help(&H)"
+ BEGIN
+    MENUITEM  "About pixXY(&A)...\tCtrl + A"  IDM_ABOUT
+ END
+END
+
+// Pop-up menu
+PIXXYPOPUPMENU MENU DISCARDABLE
+BEGIN
+ POPUP "Dummy Popup"
+  BEGIN
+    MENUITEM "Copy the coordinate\tCtrl + C"  IDM_COPY_COORDINATES
+  END
+END
+
+// Bitmaps
+// Toolbar button bitmap
+// 16-color bitmap (width:16 pixels, height: 15 pixels)
+// Bouckground color (R,G,B) = (212, 208, 200)(#c0c0c0) is suitable.
+IDB_RELOAD   BITMAP  "reload.bmp"
+IDB_ENLARGE  BITMAP  "enlarge.bmp"
+IDB_SHRINK   BITMAP  "shrink.bmp"
+
+// Stringtable for tooltips
+STRINGTABLE DISCARDABLE
+{
+	IDS_OPEN      "Open image"
+    IDS_CLOSE     "Close image"
+
+	IDS_RELOAD    "Refresh image"
+	IDS_ENLARGE   "Enlarge image"
+	IDS_SHRINK    "Shrink image"
+
+	IDS_COORD    "Coordinate"
+}
+
+
+// Icon
+IDI_ICON ICON  DISCARDABLE  "pixxy.ico"
+
+// About dialog
+ABOUTDIALOG  DIALOG  DISCARDABLE 32, 32, 180, 100
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+   DEFPUSHBUTTON    "OK", IDOK, 66,80,50,14
+   ICON        IDI_ICON, IDC_STATIC, 7,7,20,20
+   CTEXT       "pixXY", IDC_STATIC, 40,12,100,9
+   CTEXT       "A tool to copy the specified pixel coordinate\n to clipboard by right clicking", IDC_STATIC, 7,40,166,16
+   CTEXT       "(c) aoyama iwao", IDC_STATIC, 7,64,166,8
+END
+
+// Open dialog
+IDD_COMDLG DIALOG 0, 0, 282, 140
+STYLE DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_BORDER
+CAPTION ""
+LANGUAGE LANG_JAPANESE, 0x1
+FONT 9, "MS Sans Serif"
+{
+   CONTROL "", 1119, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 0, 181, 135 
+   CONTROL "Preview(&P)", IDD_COM_CHECK, BUTTON, BS_AUTOCHECKBOX | BS_NOTIFY | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 190, 127, 81, 8 
+   CONTROL "", IDD_COM_IMAGE, STATIC, SS_ETCHEDFRAME | WS_CHILD | WS_VISIBLE, 184, 20, 90, 100 
+   CONTROL "Image:", IDD_COM_STATIC, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 184, 7, 177, 10 
+}
+
+
+// Accelerator keys
+PIXXYACCEL  ACCELERATORS
+BEGIN
+ "O",  IDM_OPEN,    VIRTKEY, CONTROL,  NOINVERT
+ "W",  IDM_CLOSE,   VIRTKEY, CONTROL,  NOINVERT
+ "Q",  IDM_END,    VIRTKEY, CONTROL,  NOINVERT
+
+ "R",  IDM_RELOAD,    VIRTKEY, CONTROL,  NOINVERT
+ VK_ADD,  IDM_ENLARGE,    VIRTKEY, CONTROL,  NOINVERT
+ VK_SUBTRACT,  IDM_SHRINK,    VIRTKEY, CONTROL,  NOINVERT
+
+ "A",  IDM_ABOUT,    VIRTKEY, CONTROL,  NOINVERT
+
+ "C",  IDM_COPY_COORDINATES_ACCEL,    VIRTKEY, CONTROL,  NOINVERT
+END
+
+
+
+
