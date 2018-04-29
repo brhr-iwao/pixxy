@@ -1,10 +1,12 @@
+ Pixxy.exe is packed in the zip file on "the [Releases](https://github.com/brhr-iwao/pixxy/releases) page".
+
 ## pixXY
 
 ### Overview
 Pixxy is a WIN32 application for image measurement. it is pronounced same as pixy [piksi].
 
 ### Installation
-No installation is needed for a Windows user. Double click the icon "pixxy.exe" and you can run pixxy.
+No installation is needed for a Windows user. Double click the icon "pixxy.exe" and you can run pixxy. Pixxy.exe is packed in the zip file on "the [Releases](https://github.com/brhr-iwao/pixxy/releases) page".
 
 If you meet the error massage "This application failed to start because the application configuration is incorrect. 
 Reinstalling the application may fix the problem." when you try to run pixxy, 
