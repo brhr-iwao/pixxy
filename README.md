@@ -15,7 +15,7 @@ try [vcredist_x86.exe for VC2005 sp1 (Microsoft Visual C++ 2005 SP1 Redistributa
 2. Move the mouse cursor arrow and put the tip on the point where you want to know the x-y coordinate.
 You can see the coordinate on the lower left status bar of the window.
 Right click and select "Copy the coordinate Ctrl + C" in the pop-up menu,
-the coordinate in format of "pixel integer value tab pixel integer value" is copied on the clipboard.
+the coordinate in format of "integer tab integer" is copied on the clipboard.
 3. You can paste the coordinate on your favorite application (spreadsheet, editor and so on) and use it !
 
 ### Photo-anthropometry
