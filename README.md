@@ -31,12 +31,14 @@ I think that most of users can't read this book and I did not put it on referenc
 
 #### Examples
 1. The former President of the U.S.
+
     Mr. Obama has the very narrow face in the viewpoint of anthropological total face index.
 However it needs to be considered that he is smiling and opening slightly mouse in the photograph, it leads to higher the total face height.
 He has mid face in a viewpoint of anthropological physiognomic upper face index which has no effect from mouse opening.
 It can be said that nasal width is under influence of the expression. Smiling leads to wider nasal width.
 
 2. The incumbent President of the U.S.
+
    His face has similarity with Japanese in viewpoints of anthropometry (total face index and relation among en-en:al-al:ch-ch).
 
 These photographs were not very appropriate because Mr. Obama is smiling and Mr. Trump looks half profile and opens slightly his mouse...
