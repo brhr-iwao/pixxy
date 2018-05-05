@@ -23,7 +23,7 @@ the coordinate in format of "integer tab integer" is copied on the clipboard.
 1. The Excel file consists of the three sheets, "landmarks", "dimensions" and "indices". It can be opened on Microsoft Excel, Kingsoft Spreadsheet etc.
 2. Open a face photograph on pixxy.
 3. Copy pixel coordinate values of an anthropological landmark to clipboard and paste it on the appropriate fields on the "landmarks" sheet.
-4. If you complete the above 2 and 3 procedures for adequate anthropological landmarks, anthropological indices are automatically calculated on the "indices" sheet.
+4. If you repeated the above 3rd procedure for adequate anthropological landmarks, anthropological indices are automatically calculated on the "indices" sheet.
 5. If you complete until the above 4th procedure, some anthropological classification are done.
 6. If you select "male" on the sexuality drop-down list on the "indices" sheet, the most similar population among Japanese, Germany, Italy and Lithuania is shown in the viewpoint of anthropometry.
 7. The author also referred to the book "Somatometry", in Anthropology 13 vols. and 3 additional vols., Yuu-zan kaku Publisher, Tokyo, 1991,ISBN4639010427 (in Japanese).
