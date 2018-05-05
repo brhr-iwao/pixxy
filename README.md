@@ -47,5 +47,5 @@ These photographs were not very appropriate because Mr. Obama is smiling and Mr.
 The author is very grateful to Mr. [Sean Barrete](https://nothings.org/) for development and release of [the stb library](https://github.com/nothings/stb) which is very programmer-friendly image loading and writing library.
 The author is also grateful to  Mr. [Okamoto Takeshi](https://www.petitmonte.com/) for presenting [an example C source of image-previewing WIN32 common dialogbox](https://www.petitmonte.com/c_cplus/capi_sample52.html). (Sorry! Link distinations are Japanese only).
 
-### Contact
+### Contact
 [Aoyama Iwao](https://github.com/brhr-iwao)
