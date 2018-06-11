@@ -67,7 +67,8 @@ BEGIN
    DEFPUSHBUTTON    "OK", IDOK, 66,80,50,14
    ICON        IDI_ICON, IDC_STATIC, 7,7,20,20
    CTEXT       "pixXY", IDC_STATIC, 40,12,100,9
-   CTEXT       "A tool to copy the specified pixel coordinate\n to clipboard by right clicking", IDC_STATIC, 7,40,166,16
+   // CTEXT       "A tool to copy the specified pixel coordinate\n to clipboard by right clicking", IDC_STATIC, 7,40,166,16
+   CTEXT       "A tool to retrieve the current mouse position\n (pixel unit) on the loaded image\n coordinate and send it to the clipboard.", IDC_STATIC, 7,35,166,32
    CTEXT       "(c) aoyama iwao", IDC_STATIC, 7,64,166,8
 END
 

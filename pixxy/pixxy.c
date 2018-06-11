@@ -28,8 +28,7 @@
 // Using stb_image by Sean Barrett
 // Visit http://github.com/nothings/stb for detail.
 #define STB_IMAGE_IMPLEMENTATION
-// #include "../stb_image.h"
- #include "stb_image.h"
+#include "../stb_image.h"
 
 #include "pixxy.h"
 #include <math.h>
@@ -213,6 +212,8 @@ LRESULT CALLBACK WndProc(HWND hImageWnd, UINT msg, WPARAM wp, LPARAM lp)
 
 	TBADDBITMAP  tbab; // Bitmaps added to the toolbar
 
+	static TRACKMOUSEEVENT tme;
+
 	switch(msg)
 	{
 		case WM_CREATE:
@@ -354,6 +355,11 @@ LRESULT CALLBACK WndProc(HWND hImageWnd, UINT msg, WPARAM wp, LPARAM lp)
 
 			SendMessage( hStatusToolTip, TTM_ADDTOOL, 0, (LPARAM)&ti );
 
+			// Initialize TRACKMOUSEEVENT structure
+			tme.cbSize = sizeof(TRACKMOUSEEVENT);
+			tme.dwFlags = TME_LEAVE;
+			tme.hwndTrack = hImageWnd;
+
 			break;
 
 		case WM_PAINT:
@@ -417,6 +423,14 @@ LRESULT CALLBACK WndProc(HWND hImageWnd, UINT msg, WPARAM wp, LPARAM lp)
 
 		case WM_MOUSEMOVE:
 			get_pixel_coord_on_mouse( hImageWnd, &x, &y );
+			_TrackMouseEvent(&tme);
+			wsprintf( str, "X: %d Y: %d", x, y );
+			SendMessage( hStatus, SB_SETTEXT, 255|0, (WPARAM)(LPSTR)str);
+			break;
+
+		case WM_MOUSELEAVE:
+			x=0;
+			y=0;
 			wsprintf( str, "X: %d Y: %d", x, y );
 			SendMessage( hStatus, SB_SETTEXT, 255|0, (WPARAM)(LPSTR)str);
 			break;
@@ -1151,6 +1165,14 @@ int    get_pixel_coord_on_mouse( HWND hImageWnd, int* lpX, int* lpY )
 	GetCursorPos( &pt );
     ScreenToClient(hImageWnd, &pt );
 
+	if( (pt.x > w) || (pt.y > h) )
+	{
+		*lpX = 0;
+		*lpY = 0;
+
+		return 0;
+	}
+
 	*lpX = round( (double)(pt.x + org.x)/mag );
 	*lpY = round( (double)(pt.y + org.y + 2 - PAGER_HEIGHT ) /mag ); // +2 is border width correction
 
@@ -1305,8 +1327,7 @@ BOOL NEAR PASCAL OnNotify(HWND hDlg, LPOFNOTIFY pOFN)
             HDC     hMem,hDC;
 			RECT    Rect;       // Preview area
             HBRUSH  hBrsuh;
-            int     Width,Height,Top,Left;
-			double  asp;
+            int     Width,Height,Top,Left; // area to draw preview image
 
 			// Make sure that sizeof(szFile) is less than the limit.
             if (SendMessage(GetParent(hDlg), CDM_GETSPEC,(WPARAM)sizeof(szFile),(LPARAM)(LPWSTR)szFile)<=sizeof(szFile));
@@ -1331,7 +1352,7 @@ BOOL NEAR PASCAL OnNotify(HWND hDlg, LPOFNOTIFY pOFN)
 						wsprintf(buffer,"Image: %d x %d",BMPINFO.bmWidth,BMPINFO.bmHeight);
                         SendMessage(GetDlgItem(hDlg,IDD_COM_STATIC),WM_SETTEXT,0,(LPARAM)buffer);
                         
-                        // Paint over the preview area
+                        // Get the preview area info and put it in Rect variable.
                         GetClientRect(GetDlgItem(hDlg,IDD_COM_IMAGE),&Rect);
 
 						// Resize on accordance with the frame
@@ -1340,13 +1361,15 @@ BOOL NEAR PASCAL OnNotify(HWND hDlg, LPOFNOTIFY pOFN)
 						Rect.right = Rect.right-2;
 						Rect.bottom = Rect.bottom-2;
 
-						// Create brush
+						// Create brush and paint over the preview area
                         hBrsuh = CreateSolidBrush(RGB(192,192,192));
                         FillRect(hDC,&Rect,hBrsuh);
                         DeleteObject(hBrsuh);
-                       
-						// In the case that loaded image is smaller than the preview area.
+
+						SetStretchBltMode(hDC, COLORONCOLOR);
+                       					
 						// Two way to center the preview image
+						// In the case that loaded image is smaller than the preview area.
                         if ((BMPINFO.bmWidth<Width+(int)(Height*0.1)) && (BMPINFO.bmHeight<Height)+(int)(Height*0.1))
                         {  
                            Left = (int)((Width-BMPINFO.bmWidth)/2);
@@ -1358,8 +1381,8 @@ BOOL NEAR PASCAL OnNotify(HWND hDlg, LPOFNOTIFY pOFN)
                           Top = (int)(Height*0.1);
                           Left = (int)(Width*0.1);
 
-						  // dirty preview image due to resizing...
                           StretchBlt (hDC,Left,Top,(int)(Width*0.8),(int)(Height*0.8),hMem,0,0,BMPINFO.bmWidth,BMPINFO.bmHeight,SRCCOPY);
+
                         }
 
                         DeleteDC(hMem);    
