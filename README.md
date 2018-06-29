@@ -6,12 +6,12 @@ Pixxy is a WIN32 application for image measurement. It is pronounced same as pix
 ### Installation
 No installation is needed for a Windows user. Double click the icon "pixxy.exe" and you can run pixxy. Pixxy.exe is packed in the zip file on the "[Releases](https://github.com/brhr-iwao/pixxy/releases)" page.
 
-If you meet the error massage "This application failed to start because the application configuration is incorrect. 
-Reinstalling the application may fix the problem." when you try to run pixxy, 
+If you meet the error massage "This application failed to start because the application configuration is incorrect.
+Reinstalling the application may fix the problem." when you try to run pixxy,
 try [vcredist_x86.exe for VC2005 sp1 (Microsoft Visual C++ 2005 SP1 Redistributable Package (x86) )](https://www.microsoft.com/en-us/download/details.aspx?id=5638).
 
 ### Usage
-1. Run pixxy and select File(F) --> Open Image(O)... to open a image file. 
+1. Run pixxy and select File(F) --> Open Image(O)... to open a image file.
 2. Move the mouse cursor arrow and put the tip on the point where you want to know the x-y coordinate.
 You can see the coordinate on the lower left status bar of the window.
 Right click and select "Copy the coordinate Ctrl + C" in the pop-up menu,
@@ -19,7 +19,7 @@ the coordinate in format of "integer tab integer" is copied on the clipboard.
 3. You can paste the coordinate on your favorite application (spreadsheet, editor and so on) and use it !
 
 ### Photo-anthropometry
-#### About the Excel spreadsheet file "fece_measurement.xls".
+#### About the Excel spreadsheet file "face_measurement.xls".
 1. The Excel file consists of the three sheets, "landmarks", "dimensions" and "indices". It can be opened on Microsoft Excel, Kingsoft Spreadsheet etc.
 2. Open a face photograph on pixxy.
 3. Copy pixel coordinate values of an anthropological landmark to clipboard and paste it on the appropriate fields on the "landmarks" sheet.
