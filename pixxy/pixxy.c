@@ -1165,7 +1165,7 @@ int    get_pixel_coord_on_mouse( HWND hImageWnd, int* lpX, int* lpY )
 	GetCursorPos( &pt );
     ScreenToClient(hImageWnd, &pt );
 
-	if( (pt.x > w) || (pt.y > h) )
+	if( ( (double)(pt.x) > (double)(w)*mag ) || ( (double)(pt.y) - PAGER_HEIGHT > (double)(h)*mag ) )
 	{
 		*lpX = 0;
 		*lpY = 0;
