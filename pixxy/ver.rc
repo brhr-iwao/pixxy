@@ -20,11 +20,11 @@ BEGIN
   BEGIN
     VALUE "CompanyName", "aoyama iwao\0"
 	VALUE "FileDescription", "pixxy\0"
-	VALUE "FileVersion", "1.0.0.2018061100\0"
+	VALUE "FileVersion", "1.0.0.2018070300\0"
 	VALUE "LegalCopyright", "(c) aoyama iwao"
 	VALUE "OriginalFilename", "pixxy.exe\0"
     VALUE "ProductName", "pixXY\0"
-	VALUE "ProductVersion", "1.0.0.2018061100\0"
+	VALUE "ProductVersion", "1.0.0.2018070300\0"
   END
  END
 END

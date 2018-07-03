@@ -411,13 +411,15 @@ LRESULT CALLBACK WndProc(HWND hImageWnd, UINT msg, WPARAM wp, LPARAM lp)
 			{
 				SendMessage(hImageWnd, WM_VSCROLL, SB_LINEUP, 0); 
 				SendMessage(hImageWnd, WM_VSCROLL, SB_LINEUP, 0);
+				SendMessage(hImageWnd, WM_MOUSEMOVE, wp, lp); // Update coordinate on the status bar.
 				break;
 			}
 
 			else if( (short)HIWORD(wp) < 0 ) 
 			{
 				SendMessage(hImageWnd, WM_VSCROLL, SB_LINEDOWN, 0); 
-				SendMessage(hImageWnd, WM_VSCROLL, SB_LINEDOWN, 0); 
+				SendMessage(hImageWnd, WM_VSCROLL, SB_LINEDOWN, 0);
+				SendMessage(hImageWnd, WM_MOUSEMOVE, wp, lp);// Update coordinate on the status bar.
 				break;
 			}
 
