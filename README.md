@@ -30,18 +30,23 @@ the coordinate in format of "integer tab integer" is copied on the clipboard.
 I think that most of users can't read this book and I did not put it on reference-lists in the Excel sheet.
 
 #### Examples
-1. The former President of the U.S.
+1. The former President of the U.S.  
+![barak obama](https://github.com/brhr-iwao/pixxy/blob/master/anthropometry%20examples/barak-obama.png)
 
     Mr. Obama has the very narrow face in the viewpoint of anthropological total face index.
 However it needs to be considered that he is smiling and opening slightly mouse in the photograph, it leads to higher the total face height.
 He has mid face in a viewpoint of anthropological physiognomic upper face index which has no effect from mouse opening.
 It can be said that nasal width is under influence of the expression. Smiling leads to wider nasal width.
 
-2. The incumbent President of the U.S.
+2. The incumbent President of the U.S.  
+![donald trump](https://github.com/brhr-iwao/pixxy/blob/master/anthropometry%20examples/donald-trump.png)
 
    His face has similarity with Japanese in viewpoints of anthropometry (total face index and relation among en-en:al-al:ch-ch).
 
 These photographs were not very appropriate because Mr. Obama is smiling and Mr. Trump looks half profile and opens slightly his mouse...
+
+### General disclaimer
+PixXY is in the public domain as well as [the stb library](https://github.com/nothings/stb) is. PiXY is provided without any warranty. There is no guarantee of results generated from using pixXY.
 
 ### Acknowledgement
 The author is very grateful to Mr. [Sean Barrete](https://nothings.org/) for development and release of [the stb library](https://github.com/nothings/stb) which is very programmer-friendly image loading and writing library.
