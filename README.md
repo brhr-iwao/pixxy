@@ -46,7 +46,7 @@ It can be said that nasal width is under influence of the expression. Smiling le
 These photographs were not very appropriate because Mr. Obama is smiling and Mr. Trump looks half profile and opens slightly his mouse...
 
 ### General disclaimer
-PixXY is in the public domain as well as [the stb library](https://github.com/nothings/stb) is. PiXY is provided without any warranty. There is no guarantee of results generated from using pixXY.
+PixXY is in the public domain as well as [the stb library](https://github.com/nothings/stb) is. PixXY is provided without any warranty. There is no guarantee of results generated from using pixXY.
 
 ### Acknowledgement
 The author is very grateful to Mr. [Sean Barrete](https://nothings.org/) for development and release of [the stb library](https://github.com/nothings/stb) which is very programmer-friendly image loading and writing library.
