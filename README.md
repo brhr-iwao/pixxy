@@ -1,7 +1,7 @@
 ## pixXY
 
 ### Overview
-Pixxy is a WIN32 application for image measurement. It is pronounced same as pixy [piksi].
+Pixxy is useful to bring a pixel coordinate to an Excel spreadsheet. Pixxy is pronounced same as pixy [piksi].
 
 ### Installation
 No installation is needed for a Windows user. Double click the icon "pixxy.exe" and you can run pixxy. Pixxy.exe is packed in the zip file on the "[Releases](https://github.com/brhr-iwao/pixxy/releases)" page.
