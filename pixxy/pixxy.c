@@ -1,6 +1,8 @@
 /*
 // PIXXY
-// A tool for image measurement.
+// A tool to retrieve the current mouse position
+// (pixel unit) on the loaded image
+// coordinate and send it to the clipboard.
 // (WIN32 application)
 //
 // Copyright(c) aoyama iwao
@@ -28,7 +30,7 @@
 // Using stb_image by Sean Barrett
 // Visit http://github.com/nothings/stb for detail.
 #define STB_IMAGE_IMPLEMENTATION
-#include "../stb_image.h"
+#include "stb_image.h"
 
 #include "pixxy.h"
 #include <math.h>
@@ -148,7 +150,7 @@ int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance,
      wndclass.hInstance     = hInstance ;
 	 wndclass.hIcon         = LoadIcon (hInstance, MAKEINTRESOURCE(IDI_ICON)) ;
      wndclass.hCursor       = LoadCursor (NULL, IDC_ARROW) ;
-     wndclass.hbrBackground = (HBRUSH) GetStockObject (WHITE_BRUSH) ;
+     wndclass.hbrBackground = (HBRUSH) GetStockObject (GRAY_BRUSH) ;
      wndclass.lpszMenuName  = "PIXXYMAINMENU" ;  
      wndclass.lpszClassName = szAppName ;
 
@@ -471,6 +473,8 @@ LRESULT CALLBACK WndProc(HWND hImageWnd, UINT msg, WPARAM wp, LPARAM lp)
 					 SendMessage( hToolBar, TB_ENABLEBUTTON, IDM_ENLARGE, TRUE);
 			         SendMessage( hToolBar, TB_ENABLEBUTTON, IDM_SHRINK, TRUE);
 				   }
+
+				  SendMessage(hImageWnd, WM_PAINT,0,0);
 
 				  break;
 

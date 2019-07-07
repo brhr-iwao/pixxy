@@ -1,7 +1,7 @@
 #include <winver.h>
 
 VS_VERSION_INFO VERSIONINFO
-FILEVERSION 1.0.0.2018061100
+FILEVERSION 1.0.0.2019070700
 PRODUCTVERSION  1.0.0.2018061100
 FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
 FILEFLAGS 0x00000000L
@@ -20,11 +20,11 @@ BEGIN
   BEGIN
     VALUE "CompanyName", "aoyama iwao\0"
 	VALUE "FileDescription", "pixxy\0"
-	VALUE "FileVersion", "1.0.0.2018070300\0"
+	VALUE "FileVersion", "1.0.0.2019070700\0"
 	VALUE "LegalCopyright", "(c) aoyama iwao"
 	VALUE "OriginalFilename", "pixxy.exe\0"
     VALUE "ProductName", "pixXY\0"
-	VALUE "ProductVersion", "1.0.0.2018070300\0"
+	VALUE "ProductVersion", "1.0.0.2019070700\0"
   END
  END
 END
