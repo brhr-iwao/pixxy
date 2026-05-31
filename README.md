@@ -8,7 +8,7 @@ No installation is needed for a Windows user. Double click the icon "pixxy.exe" 
 
 If you meet the error massage "This application failed to start because the application configuration is incorrect.
 Reinstalling the application may fix the problem." when you try to run pixxy,
-try [vcredist_x86.exe for VC2005 sp1 (Microsoft Visual C++ 2005 SP1 Redistributable Package (x86) )](https://www.microsoft.com/en-us/download/details.aspx?id=5638).
+try [vcredist_x86.exe for VC2005 sp1 (Microsoft Visual C++ 2005 SP1 Redistributable Package (x86) )](https://github.com/brhr-iwao/pixxy/releases/download/1.0.190707/vcredist_x86.exe).
 
 ### Usage
 1. Run pixxy and select File(F) --> Open Image(O)... to open a image file.
@@ -19,9 +19,9 @@ the coordinate in format of "integer tab integer" is copied on the clipboard.
 3. You can paste the coordinate on your favorite application (spreadsheet, editor and so on) and use it !
 
 ### Photo-anthropometry
-#### About the Excel spreadsheet file "face_measurement.xls".
-1. The Excel file consists of the three sheets, "landmarks", "dimensions" and "indices". It can be opened on Microsoft Excel, Kingsoft Spreadsheet etc.
-2. Open a face photograph on pixxy.
+#### About the Excel spreadsheet file "[face_measurement.xls](https://github.com/brhr-iwao/pixxy/blob/master/anthropometry%20examples/face_measurement.xls)".
+1. The Excel file consists of the three sheets, "landmarks", "dimensions" and "indices". It can be opened on Microsoft Excel, LibreOffice Calc Spreadsheet etc.
+2. Open a face photograph on pixXY.
 3. Copy pixel coordinate values of an anthropological landmark to clipboard and paste it on the appropriate fields on the "landmarks" sheet.
 4. If you repeated the above 3rd procedure for adequate anthropological landmarks, anthropological indices are automatically calculated on the "indices" sheet.
 5. If you complete until the above 4th procedure, some anthropological classification are done.
@@ -30,7 +30,7 @@ the coordinate in format of "integer tab integer" is copied on the clipboard.
 I think that most of users can't read this book and I did not put it on reference-lists in the Excel sheet.
 
 #### Examples
-1. The former President of the U.S.  
+1.  
 ![barak obama](https://github.com/brhr-iwao/pixxy/blob/master/anthropometry%20examples/barak-obama.png)
 
     Mr. Obama has the very narrow face in the viewpoint of anthropological total face index.
@@ -38,7 +38,7 @@ However it needs to be considered that he is smiling and opening slightly mouse 
 He has mid face in a viewpoint of anthropological physiognomic upper face index which has no effect from mouse opening.
 It can be said that nasal width is under influence of the expression. Smiling leads to wider nasal width.
 
-2. The incumbent President of the U.S.  
+2. 
 ![donald trump](https://github.com/brhr-iwao/pixxy/blob/master/anthropometry%20examples/donald-trump.png)
 
    His face has similarity with Japanese in viewpoints of anthropometry (total face index and relation among en-en:al-al:ch-ch).
