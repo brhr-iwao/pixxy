@@ -13,7 +13,7 @@ _D_<sup>2</sup> は、指数間の相関を考慮した距離であるため、�
 ![LibreOffice](https://github.com/brhr-iwao/pixxy/blob/master/images/libre_enable_macro.png)  
 「人類学的計測」シートをアクティブにし、ドロップダウンリストで男女を選択します。    
 ![人類学的計測シート](https://github.com/brhr-iwao/pixxy/blob/master/images/select_landmark_sheet_and_sexuality.png)  
-pixXYで顔画像を開き、標記点のXY座標を「人類学的標記点」の所定のセルに入力します。  
+pixXYで顔画像を開き、標記点のXY座標を「人類学的標記点」の所定のセルに入力します。（#N/Aの上に上書きします）  
 > [!NOTE]
 > 口を開いた顔では「口裂正中点」に、正中線上の上赤唇縁下端（ウワクチビルの下端点）を、「口裂正中点（下赤唇）」に下赤唇縁上端（シタクチビルの上端点）を入力してください。口を閉じた顔では、「口裂正中点」の入力のみで（「口裂正中点（下赤唇）」は#N/Aのままで）OKです。  
 ![口裂正中点](https://github.com/brhr-iwao/pixxy/blob/master/images/stomion.png)  
