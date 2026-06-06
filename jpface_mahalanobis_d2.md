@@ -7,7 +7,7 @@ _D_<sup>2</sup> は、指数間の相関を考慮した距離であるため、�
 
 ### 使い方
 ここでは pixXY を使った方法を述べます。PixXYの使い方は、[README_JP.md](https://github.com/brhr-iwao/pixxy/blob/master/README_JP.md) をご覧ください。
-1. Excel ファイル [jpface_mahalanobis_d2.xlsm](https://github.com/brhr-iwao/pixxy/blob/master/jpface_malahanobis_d2/jpface_mahalanobis_d2.xlsm) または LibreOffice Calc ファイル  [jpface_mahalanobis_d2.ods](https://github.com/brhr-iwao/pixxy/blob/master/jpface_malahanobis_d2/jpface_mahalanobis_d2.ods) を、ご自身に環境に応じて取得します。
+1. Excel ファイル [jpface_mahalanobis_d2.xlsm](https://github.com/brhr-iwao/pixxy/blob/master/jpface_mahalanobis_d2/jpface_mahalanobis_d2.xlsm) または LibreOffice Calc ファイル  [jpface_mahalanobis_d2.ods](https://github.com/brhr-iwao/pixxy/blob/master/jpface_mahalanobis_d2/jpface_mahalanobis_d2.ods) を、ご自身に環境に応じて取得します。
 2. 1のファイルを開き、マクロを有効にします。  
 ![Excel](https://github.com/brhr-iwao/pixxy/blob/master/images/excel_enable_macro.png)
 ![LibreOffice](https://github.com/brhr-iwao/pixxy/blob/master/images/libre_enable_macro.png)  
