@@ -48,6 +48,15 @@ pixXYで顔画像を開き、標記点のXY座標を「人類学的標記点」�
 |下顎角点<br>かがくかくてん|gonion(go)<br>ゴニオン|下顎骨の下顎角部の最も下方・後方・外側方にある点。<br>[文献4](#文献4)では口裂線の延長線と正貌の輪郭線の交点。|
 |オトガイ点|gnathion(gn)<br>グナチオン|[耳眼平面](#注2)を水平にした状態で、[正中矢状面](#注1)で下顎骨下縁の最も下方の点。<br>顔写真では[正中矢状面](#注1)と正貌の輪郭線下縁の交点。|
 
+### 注
+<a id="注1" href="#文献2">
+1. 正中矢状面とは、身体を左右対称に折半する平面。
+</a>
+<br>
+<a id="注2" href="#文献1">
+2. 耳眼平面とは、左右の耳珠点（耳珠上縁の付け根の点）と左の眼窩点（眼窩下縁の最下点）を通る平面。フランクフルト平面、ドイツ平面ともいう。
+</a>
+
 ### 参考文献
 <a id="文献1" href="https://dl.ndl.go.jp/pid/12685250/1/119">
 1. 藤田恒太郎（寺田春水改訂）、生体観察、南山堂、1976年、https://dl.ndl.go.jp/pid/12685250/1/119   (国立国会図書館デジタルコレクション送信サービスで閲覧できます)
@@ -65,11 +74,3 @@ pixXYで顔画像を開き、標記点のXY座標を「人類学的標記点」�
 4. Y. Ogawa, B. Wada, K. Taniguchi, S. Miyasaka, K. Imaizumi, Photo anthropometric variations in Japanese facial features: Establishment of large-sample standard reference data for personalidentification using a three-dimensional capture system, Forensic Science International, 257, 511.e1-511.e9 (2015), http://dx.doi.org/10.1016/j.forsciint.2015.07.046
 </a>
 
-### 注
-<a id="注1" href="#文献2">
-1. 正中矢状面とは、身体を左右対称に折半する平面。
-</a>
-<br>
-<a id="注2" href="#文献1">
-2. 耳眼平面とは、左右の耳珠点（耳珠上縁の付け根の点）と左の眼窩点（眼窩下縁の最下点）を通る平面。フランクフルト平面、ドイツ平面ともいう。
-</a>
