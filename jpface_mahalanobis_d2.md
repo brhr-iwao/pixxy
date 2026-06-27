@@ -42,6 +42,8 @@ pixXYで顔画像を開き、標記点のXY座標を「人類学的標記点」�
 |鼻翼点<br>びよくてん|alare(al)<br>アラーレ|鼻翼(コバナ)の最も外側方に張り出している点。|
 |鼻下点<br>びかてん|subnasale(sn)<br>ズブナザーレ|鼻中隔前縁の下端が上唇部の皮膚面(ハナノシタ)に移行する点。|
 |口点<br>こうてん|stomion(sto)<br>ストミオン|口を自然に閉じた状態で口裂線の[正中矢状面](#注1)の交点。|
+|上唇点<br>じょうしんてん|labrale superius(ls)<br>ラブラーレ・スーペリウス|上赤唇縁（ウワクチビル）の最高点を通る水平線と[正中矢状面](#注1)の交わる点。|
+|下唇点<br>かしんてん|labrale inferius(li)<br>ラブラーレ・インフェリウス|下赤唇縁（シタクチビル）の下縁と[正中矢状面](#注1)の交わる点。|
 |口角点<br>こうかくてん|cheilion(ch)<br>ケイリオン|口角で上唇（≒ウワクチビル）と下唇（≒シタクチビル）が移行する点。|
 |下顎角点<br>かがくかくてん|gonion(go)<br>ゴニオン|下顎骨の下顎角部の最も下方・後方・外側方にある点。<br>[文献4](#文献4)では口裂線の延長線と正貌の輪郭線の交点。|
 |オトガイ点|gnathion(gn)<br>グナチオン|[耳眼平面](#注2)を水平にした状態で、[正中矢状面](#注1)で下顎骨下縁の最も下方の点。<br>顔写真では[正中矢状面](#注1)と正貌の輪郭線下縁の交点。|
@@ -51,15 +53,15 @@ pixXYで顔画像を開き、標記点のXY座標を「人類学的標記点」�
 <a id="文献1" href="https://dl.ndl.go.jp/pid/12685250">
 1. 藤田恒太郎（寺田春水改訂）、生体観察、南山堂、1976年、https://dl.ndl.go.jp/pid/12685250  (国立国会図書館デジタルコレクション送信サービスで閲覧できます)
 </a>
-<br>
+<br><br>
 <a id="文献2">
 2. 人類学講座編集委員会、人類学講座別巻1、人体計測法(I 生体計測法、II 人骨計測法)、雄山閣出版、1991年
 </a>
-<br> 
+<br><br>
 <a id="文献3">
 3. 宮坂祥夫、小川好則、谷口慶、今泉和彦、顔写真を用いた人類学的計測検査のためのNasion代替点の設定方法に関する提案、科学警察研究所報告、第63巻第2号、63-73頁、2014年
 </a>
-<br>
+<br><br>
 <a id="文献4" href="http://dx.doi.org/10.1016/j.forsciint.2015.07.046">
 4. Y. Ogawa, B. Wada, K. Taniguchi, S. Miyasaka, K. Imaizumi, Photo anthropometric variations in Japanese facial features: Establishment of large-sample standard reference data for personalidentification using a three-dimensional capture system, Forensic Science International, 257, 511.e1-511.e9 (2015), http://dx.doi.org/10.1016/j.forsciint.2015.07.046
 </a>
