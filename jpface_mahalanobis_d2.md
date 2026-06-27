@@ -51,15 +51,15 @@ pixXYで顔画像を開き、標記点のXY座標を「人類学的標記点」�
 <a id="文献1" href="https://dl.ndl.go.jp/pid/12685250">
 1. 藤田恒太郎（寺田春水改訂）、生体観察、南山堂、1976年、https://dl.ndl.go.jp/pid/12685250  (国立国会図書館デジタルコレクション送信サービスで閲覧できます)
 </a>
-  
+<br>
 <a id="文献2">
 2. 人類学講座編集委員会、人類学講座別巻1、人体計測法(I 生体計測法、II 人骨計測法)、雄山閣出版、1991年
 </a>
-  
+<br> 
 <a id="文献3">
 3. 宮坂祥夫、小川好則、谷口慶、今泉和彦、顔写真を用いた人類学的計測検査のためのNasion代替点の設定方法に関する提案、科学警察研究所報告、第63巻第2号、63-73頁、2014年
 </a>
-  
+<br>
 <a id="文献4" href="http://dx.doi.org/10.1016/j.forsciint.2015.07.046">
 4. Y. Ogawa, B. Wada, K. Taniguchi, S. Miyasaka, K. Imaizumi, Photo anthropometric variations in Japanese facial features: Establishment of large-sample standard reference data for personalidentification using a three-dimensional capture system, Forensic Science International, 257, 511.e1-511.e9 (2015), http://dx.doi.org/10.1016/j.forsciint.2015.07.046
 </a>
@@ -68,7 +68,7 @@ pixXYで顔画像を開き、標記点のXY座標を「人類学的標記点」�
 <a id="注1" href="#文献2">
 1. 正中矢状面とは、身体を左右対称に折半する平面。
 </a>
-  
+<br>
 <a id="注2" href="#文献1">
 2. 耳眼平面とは、左右の耳珠点（耳珠上縁の付け根の点）と左の眼窩点（眼窩下縁の最下点）を通る平面。フランクフルト平面、ドイツ平面ともいう。
 </a>
